@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediAssist - Symptom Checker</title>
+    <link rel="favicon icon" type="image/png" href="./image/chatbot.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-red-800 mb-4">MediAssist</h1>
+            
+            <p>Welcome to Dr. Chat! </p>
+            <p class="text-gray-600">Your AI-Powered Symptom Consultation Companion</p>
+            </p>We help you identify possible diseases you might be </p>
+            <p>suffering from based on the symptoms you are having.To get started,</p> 
+            <p> please choose the symptoms you have from the list below:</p>
+        </header>
+
+        <main class="max-w-2xl mx-auto">
+            <section id="symptom-input" class="bg-white shadow-lg rounded-lg p-6 mb-8">
+                <!-- Input Method Selection -->
+                <div id="input-methods" class="flex justify-center gap-4 my-4">
+                    <button id="voice-method" class="input-method bg-white shadow-lg rounded-full p-4 hover:bg-red-50">
+                        <i class="fas fa-microphone text-red-800 text-2xl"></i>
+                        <span class="text-sm text-gray-700 mt-2 block">Voice</span>
+                    </button>
+                    <button id="image-method" class="input-method bg-white shadow-lg rounded-full p-4 hover:bg-red-50">
+                        <i class="fas fa-image text-red-800 text-2xl"></i>
+                        <span class="text-sm text-gray-700 mt-2 block">Image</span>
+                    </button>
+                </div>
+
+                <!-- Symptom Filters -->
+                <div id="symptom-filters" class="flex flex-wrap gap-2 mb-4">
+                    <!-- Dynamically populated symptom list -->
+                </div>
+
+                <!-- Send Button -->
+                <div class="text-center">
+                    <button id="send-symptoms" class="bg-red-800 text-white px-6 py-2 rounded-lg hover:bg-red-500">
+                        Send Symptoms
+                    </button>
+                </div>
+            </section>
+
+            <section id="consultation-results" class="space-y-6">
+                <!-- Consultation results will be dynamically populated -->
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>© 2024 MediAssist. For emergency medical assistance, please contact healthcare professionals.</p>
+        </footer>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
