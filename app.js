@@ -1,4 +1,6 @@
-const apiKey = "dxLwu59vwcOVbO9kKAbfiWFmG1a7xTB0d7bc0CS5";
+require('dotenv').config();
+
+const apiKey = process.env.apiKey;
 
 class MediAssist {
     constructor() {
